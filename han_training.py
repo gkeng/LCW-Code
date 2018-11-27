@@ -95,7 +95,7 @@ def load_data(model, x_train_file, x_test_file, y_train_file, y_test_file):
 
     return
 
-''''
+'''
 
 
 
@@ -148,7 +148,7 @@ if __name__ == "__main__":
 	y_train_folder=''
 	epochs=60
 	
-	duo = twin_creation( x_train_folder, y_train_folder)
+	duo_list = twin_creation( x_train_folder, y_train_folder)
 	for epoch in range(epochs):
 		for k,duo in enumerate(duo_list):
 		    print('fitting on firm nb {} out of 494 epoch {}'.format(k,epoch))
